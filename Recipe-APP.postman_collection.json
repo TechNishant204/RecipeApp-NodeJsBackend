@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "f8fe4610-8e04-4f5a-90ab-5fa99cd3567f",
+		"name": "Recipe-APP",
+		"description": "The **Recipe App API** allows users to manage their recipe data with simple CRUD (Create, Read, Update, Delete) operations. The API is designed to provide endpoints for creating recipes, fetching recipes, updating existing recipes, and deleting recipes.\n\n### **Features**\n\n- **Create Recipes**: Add new recipes with details like title, description, ingredients, tags, and author.\n    \n- **Retrieve Recipes**:\n    \n    - Fetch all recipes in the collection.\n        \n    - Fetch a single recipe by its unique ID.\n        \n- **Update Recipes**: Modify specific details of an existing recipe.\n    \n- **Delete Recipes**: Remove a recipe from the collection.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21245283"
+	},
+	"item": [
+		{
+			"name": "CreateRecipe- POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"title\": \"Beef Stroganoff\",\r\n    \"description\": \"Hearty and creamy beef dish served over noodles.\",\r\n    \"ingredients\": [\"Beef\", \"Sour Cream\", \"Mushrooms\", \"Onions\"],\r\n    \"tags\": [\"Non-Veg\", \"Russian\", \"ComfortFood\"],\r\n    \"author\": \"Alexander Ivanov\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/recipe/createRecipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"recipe",
+						"createRecipe"
+					]
+				},
+				"description": "#### 1\\. **Create a Recipe**\n\n- **Method**: `POST`\n    \n- **Endpoint**: `/`createRecipe\n    \n- **Description**: Add a new recipe to the collection by providing required details.\n    \n- **Required Fields**: `title`, `description`, `ingredients`, `tags`, `author`\n    \n- **Success Response**: `201 Created`"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllRecipes -GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/recipe/getAllRecipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"recipe",
+						"getAllRecipes"
+					]
+				},
+				"description": ". **Retrieve All Recipes**\n\n- **Method**: `GET`\n    \n- **Endpoint**: `/`getAllRecipes\n    \n- **Description**: Fetch a list of all recipes.\n    \n- **Success Response**: `200 OK`"
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecipeById - GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/recipe/getRecipeById/67d7c929ea88eead2e028f90",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"recipe",
+						"getRecipeById",
+						"67d7c929ea88eead2e028f90"
+					]
+				},
+				"description": "**Retrieve a Recipe by ID**\n\n- **Method**: `GET`\n    \n- **Endpoint**: `/getRecipeById/:id`\n    \n- **Description**: Fetch details of a specific recipe by its ID.\n    \n- **Success Response**: `200 OK`\n    \n- **Error Response**: `404 Not Found` (if the recipe does not exist)"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRecipeById -PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"title\": \"Italian Pink Sauce Pasta\",\r\n     \"description\": \"Italiano cheesy hotnSpicy grilled pasta\",\r\n     \"ingredients\" : [\"Pasta\", \"Cheese\",\"Vegetables\",\"spices\",\"Origano\"],\r\n      \"tags\" : [\"Veg\",\"fastfood\",\"ItalianRecipe\"]      \r\n      \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/recipe/updateRecipe/67d7c78cea88eead2e028f82",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"recipe",
+						"updateRecipe",
+						"67d7c78cea88eead2e028f82"
+					]
+				},
+				"description": "#### **Update a Recipe**\n\n- **Method**: `PUT`\n    \n- **Endpoint**: `/updateRecipeById/:id`\n    \n- **Description**: Update the details of an existing recipe.\n    \n- **Success Response**: `200 OK`\n    \n- **Error Response**: `404 Not Found` (if the recipe does not exist)"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRecipeById - DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/recipe/deleteRecipe/67d7c9feea88eead2e028f96",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"recipe",
+						"deleteRecipe",
+						"67d7c9feea88eead2e028f96"
+					]
+				},
+				"description": "#### **Delete a Recipe**\n\n- **Method**: `DELETE`\n    \n- **Endpoint**: `/deleteRecipe/:id`\n    \n- **Description**: Remove a recipe by its ID from the collection.\n    \n- **Success Response**: `200 Deleted recipe`\n    \n- **Error Response**: `404 Not Found` (if the recipe does not exist)"
+			},
+			"response": []
+		}
+	]
+}
