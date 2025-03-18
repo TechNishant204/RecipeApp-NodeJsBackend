@@ -7,7 +7,7 @@
   
 A full-featured CRUD (Create, Read, Update, Delete) application for managing recipes, built using Node.js, Express.js, and MongoDB with Mongoose. This application follows the MVC (Model-View-Controller) architecture, providing a RESTful API for interacting with recipe data. The project also utilizes Postman for API testing and documentation.<br><br>
 
-**Published Postman Doc** : <a href="https://documenter.getpostman.com/view/21245283/2sAYkBuMoR">https://documenter.getpostman.com/view/21245283/2sAYkBuMoR</a>
+**Published Postman Doc** : <a href="https://documenter.getpostman.com/view/21245283/2sAYkBuMoR">https://documenter.getpostman.com/view/21245283/2sAYkBuMoR</a><br>
 **Deployed Link** : <a href="https://recipe-app-4h2w.onrender.com/recipe/getAllRecipes">https://recipe-app-4h2w.onrender.com/recipe/getAllRecipes</a>
 
 ## Features
