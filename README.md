@@ -24,19 +24,19 @@ A full-featured CRUD (Create, Read, Update, Delete) application for managing rec
 ## API Endpoints
 
 - **Create Recipe**  
-  `POST /api/recipes`
+  `POST /recipe/createRecipe`
   
 - **Retrieve All Recipes**  
-  `GET /api/recipes`
+  `GET /recipe/getAllRecipes`
   
 - **Retrieve a Single Recipe**  
-  `GET /api/recipes/:id`
+  `GET /recipe/getRecipeById/:id`
   
 - **Update Recipe**  
-  `PUT /api/recipes/:id`
+  `PUT /recipe/updateRecipe/:id`
   
 - **Delete Recipe**  
-  `DELETE /api/recipes/:id`
+  `DELETE /recipe/deleteRecipe/:id`
 
 ## Project Structure
 
