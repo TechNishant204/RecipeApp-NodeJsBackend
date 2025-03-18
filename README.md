@@ -95,8 +95,8 @@ Follow these steps to set up the project locally:
 ### Base URL
 
 * `API_URI` variable:
-  * for local running: `http://localhost:3000`
-  * for deployed API: `https://recipe-management-zzle.onrender.com`
+  * for local running: `http://localhost:4000`
+  * for deployed API: `[https://recipe-app-4h2w.onrender.com/recipe/getAllRecipes]`
 
 ```
 {{API_URI}}/api/recipes
