@@ -1,5 +1,10 @@
 # Recipes App
-
+ ![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+  ![Express.js](https://img.shields.io/badge/Express.js-4.x-blue)
+  ![Mongoose](https://img.shields.io/badge/Mongoose-7.x-orange)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-6.x-brightgreen)
+  ![Postman](https://img.shields.io/badge/Postman-API%20Documentation-orange)
+  
 A full-featured CRUD (Create, Read, Update, Delete) application for managing recipes, built using Node.js, Express.js, and MongoDB with Mongoose. This application follows the MVC (Model-View-Controller) architecture, providing a RESTful API for interacting with recipe data. The project also utilizes Postman for API testing and documentation.
 
 ## Features
