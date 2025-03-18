@@ -6,6 +6,7 @@
   ![Postman](https://img.shields.io/badge/Postman-API%20Documentation-orange)
   
 A full-featured CRUD (Create, Read, Update, Delete) application for managing recipes, built using Node.js, Express.js, and MongoDB with Mongoose. This application follows the MVC (Model-View-Controller) architecture, providing a RESTful API for interacting with recipe data. The project also utilizes Postman for API testing and documentation.
+**Published Link** : <a href="https://documenter.getpostman.com/view/21245283/2sAYkBuMoR">https://documenter.getpostman.com/view/21245283/2sAYkBuMoR</a>
 
 ## Features
 
